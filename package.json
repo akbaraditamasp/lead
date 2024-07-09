@@ -1,6 +1,6 @@
 {
   "name": "@akbaraditamasp/lead",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI app to develop LEAD app",
   "main": "./dist/lead.js",
   "types": "./dist/lead.d.ts",
