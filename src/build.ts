@@ -42,6 +42,7 @@ export default async function build() {
           resolve(item.replace(".edge", ".edge.html"))
         ),
       },
+      copyPublicDir: false,
     },
   })) as {
     output: { fileName: string }[];
