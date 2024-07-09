@@ -43,8 +43,9 @@ export default async function server(mainDir: string, port: number = 3000) {
       try {
         html = await edge
           .get()
-          .render(template.path, { params: template.params });
+          .render(template.path, { params: template.params, req });
       } catch (err) {
+        console.log(err);
         const statusCode = isNaN(Number((err as Error).message))
           ? 500
           : Number((err as Error).message);
