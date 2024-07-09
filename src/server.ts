@@ -53,7 +53,7 @@ export default async function server(mainDir: string, port: number = 3000) {
         if (errorPage) {
           html = await edge
             .get()
-            .render(errorPage.path, { params: errorPage.params });
+            .render(errorPage.path, { params: errorPage.params, req });
         }
 
         res.status(statusCode);
