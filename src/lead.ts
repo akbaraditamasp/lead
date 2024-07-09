@@ -6,7 +6,7 @@ import build from "./build.js";
 
 const lead = new Command();
 
-lead.name("lead").description("A CLI app to develop LEAD app").version("1.0.0");
+lead.name("lead").description("A CLI app to develop LEAD app").version("1.0.2");
 
 lead
   .command("run")
